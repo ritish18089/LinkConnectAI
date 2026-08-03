@@ -14,9 +14,9 @@ export default function LandingPage() {
     let hasError = false;
 
     if (!formData.name.trim()) { newErrors.name = 'Name is required'; hasError = true; }
-    if (!formData.email.trim()) { 
-      newErrors.email = 'Email is required'; 
-      hasError = true; 
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+      hasError = true;
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Email must be valid';
       hasError = true;
@@ -34,11 +34,15 @@ export default function LandingPage() {
     setToast(null);
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
+      if (!response.ok) {
+        const text = await response.text();
+        throw new Error(text);
+      }
       const data = await response.json();
       if (data.success) {
         setToast({ type: 'success', message: "Your message has been sent successfully." });
@@ -308,50 +312,50 @@ export default function LandingPage() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-neutral-400">Name</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition-colors" 
-                      placeholder="John Doe" 
+                      className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition-colors"
+                      placeholder="John Doe"
                     />
                     {errors.name && <p className="text-red-400 text-xs">{errors.name}</p>}
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-neutral-400">Email</label>
-                    <input 
-                      type="email" 
+                    <input
+                      type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition-colors" 
-                      placeholder="john@example.com" 
+                      className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition-colors"
+                      placeholder="john@example.com"
                     />
                     {errors.email && <p className="text-red-400 text-xs">{errors.email}</p>}
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-neutral-400">Subject</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition-colors" 
-                    placeholder="How can we help?" 
+                    className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition-colors"
+                    placeholder="How can we help?"
                   />
                   {errors.subject && <p className="text-red-400 text-xs">{errors.subject}</p>}
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-neutral-400">Message</label>
-                  <textarea 
-                    rows={4} 
+                  <textarea
+                    rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition-colors" 
-                    placeholder="Your message..." 
+                    className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition-colors"
+                    placeholder="Your message..."
                   />
                   {errors.message && <p className="text-red-400 text-xs">{errors.message}</p>}
                 </div>
-                <button 
+                <button
                   disabled={isSubmitting}
                   className="w-full py-3 bg-white text-neutral-950 rounded-lg font-medium hover:bg-neutral-200 transition-colors mt-4 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >

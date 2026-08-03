@@ -950,7 +950,7 @@ Instructions:
 });
 
 
-app.post(`${import.meta.env.VITE_API_URL}/api/contact`, async (req, res) => {
+app.post("/api/contact", async (req, res) => {
   console.log("✓ Request received");
   try {
     const { name, email, subject, message } = req.body;

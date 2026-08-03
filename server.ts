@@ -47,9 +47,10 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    process.env.FRONTEND_URL || ""
-  ].filter(Boolean),
-  credentials: true
+    "https://link-connect-ai.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
 }));
 app.use(express.json());
 
@@ -181,7 +182,7 @@ Return ONLY a valid JSON object matching this exact format, with no markdown for
       console.error(`API response:`, apiError?.response || "None");
       console.error(`Full stack trace:`, apiError?.stack || apiError);
       console.error(`---------------------------------------------------\n`);
-      
+
       return res.status(500).json({
         success: false,
         error: `OpenRouter API Error: ${apiError?.message || JSON.stringify(apiError)}`,
@@ -193,7 +194,7 @@ Return ONLY a valid JSON object matching this exact format, with no markdown for
 
     let text = response.choices[0]?.message?.content || "";
     console.log(`[${timestamp}] [REQ: ${reqId}] Raw OpenRouter Response:\n${text}\n`);
-    
+
     if (!text || text.trim() === "") {
       return res.status(500).json({ success: false, error: "OpenRouter returned an empty response" });
     }
@@ -303,7 +304,7 @@ app.post("/api/ai/parse-resume", upload.single('resume'), async (req, res) => {
   const reqId = Math.random().toString(36).substring(2, 9).toUpperCase();
   console.log(`\n======================================`);
   console.log(`📄 [REQ: ${reqId}] /api/ai/parse-resume ROUTE HIT`);
-  
+
   const fileReq = req as any;
   if (!fileReq.file) {
     console.error(`[REQ: ${reqId}] No file uploaded in request.`);
@@ -346,9 +347,9 @@ app.post("/api/ai/parse-resume", upload.single('resume'), async (req, res) => {
     console.error(`Error message: ${error?.message || "Unknown error"}`);
     console.error(`Full stack trace:`, error?.stack || error);
     console.error(`---------------------------------------------------\n`);
-    
+
     if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
-    
+
     let errorMsg = "Failed to parse file.";
     const lowerMsg = (error.message || "").toLowerCase();
 
@@ -530,7 +531,7 @@ Return a JSON object STRICTLY matching this format:
       max_tokens: 800,
       temperature: 0.7
     });
-    
+
     const parsed = JSON.parse(response.choices[0]?.message?.content || "{}");
     res.json({ success: true, evaluation: parsed });
   } catch (err: any) {
@@ -547,7 +548,7 @@ app.post("/api/parse-resume", upload.single("resume"), async (req: any, res: any
     const ext = path.extname(originalname);
 
     const text = await parseResume(filePath, originalname, 'SYS');
-    
+
     fs.unlinkSync(filePath); // Cleanup
     res.json({ success: true, text });
   } catch (err: any) {
@@ -599,10 +600,10 @@ Return a JSON object STRICTLY matching this format:
       max_tokens: 1500,
       temperature: 0.7
     });
-    
+
     const rawContent = response.choices[0]?.message?.content || "{}";
     console.log("Raw AI Response:", rawContent);
-    
+
     // Clean up response if it contains markdown formatting or extra text
     let cleanText = rawContent.trim();
     if (cleanText.startsWith("```json")) {
@@ -614,12 +615,12 @@ Return a JSON object STRICTLY matching this format:
       cleanText = cleanText.substring(0, cleanText.length - 3);
     }
     cleanText = cleanText.trim();
-    
+
     // Attempt to extract json from text if still mixed
     const jsonStart = cleanText.indexOf("{");
     const jsonEnd = cleanText.lastIndexOf("}");
     if (jsonStart !== -1 && jsonEnd !== -1) {
-       cleanText = cleanText.substring(jsonStart, jsonEnd + 1);
+      cleanText = cleanText.substring(jsonStart, jsonEnd + 1);
     }
 
     console.log("Cleaned Response:", cleanText);
@@ -631,8 +632,8 @@ Return a JSON object STRICTLY matching this format:
       console.error("JSON Parse Error in Analyze Resume:", parseError.message);
       console.error("Attempted to parse:", cleanText);
       // Return a graceful error instead of throwing a 500
-      return res.json({ 
-        success: false, 
+      return res.json({
+        success: false,
         error: "The AI returned an invalid response format. Please try analyzing again.",
         partialData: null
       });
@@ -653,7 +654,7 @@ Return a JSON object STRICTLY matching this format:
       suggestions: Array.isArray(parsed.suggestions) ? parsed.suggestions : [],
       checklist: Array.isArray(parsed.checklist) ? parsed.checklist : []
     };
-    
+
     res.json({ success: true, data: safeParsed });
   } catch (err: any) {
     console.error("Error in Analyze Resume API:", err.message);
@@ -664,7 +665,7 @@ Return a JSON object STRICTLY matching this format:
 app.post("/api/hr-chat", async (req, res) => {
   try {
     const { resumeText, messages } = req.body;
-    
+
     // Only send the last 10 messages to save context/tokens, plus the system prompt
     const recentMessages = messages.slice(-10);
 
@@ -700,7 +701,7 @@ It is now your turn to speak. Generate ONLY your exact spoken words.`;
 app.post("/api/hr-evaluate", async (req, res) => {
   try {
     const { messages } = req.body;
-    
+
     // Evaluate based on the full transcript
     const prompt = `You are an expert HR Manager evaluating a candidate's performance in a Voice-Based HR Interview.
 Transcript (Generated via Speech-to-Text):
@@ -725,7 +726,7 @@ Return a JSON object STRICTLY matching this format:
       max_tokens: 1000,
       temperature: 0.7
     });
-    
+
     const parsed = JSON.parse(response.choices[0]?.message?.content || "{}");
     res.json({ success: true, evaluation: parsed });
   } catch (err: any) {
@@ -733,28 +734,28 @@ Return a JSON object STRICTLY matching this format:
   }
 });
 
-  // ==========================================
-  // Mock Interview Endpoints
-  // ==========================================
-  app.post("/api/mock-interview-chat", async (req, res) => {
-    try {
-      const { 
-        candidateDetails, 
-        messages, 
-        isInitial 
-      } = req.body;
-      
-      const {
-        fullName,
-        jobRole,
-        experienceLevel,
-        interviewType,
-        difficulty,
-        durationMins,
-        resumeText
-      } = candidateDetails;
+// ==========================================
+// Mock Interview Endpoints
+// ==========================================
+app.post("/api/mock-interview-chat", async (req, res) => {
+  try {
+    const {
+      candidateDetails,
+      messages,
+      isInitial
+    } = req.body;
 
-      const prompt = `You are an expert Interviewer conducting a ${difficulty} ${interviewType} for a candidate named ${fullName}.
+    const {
+      fullName,
+      jobRole,
+      experienceLevel,
+      interviewType,
+      difficulty,
+      durationMins,
+      resumeText
+    } = candidateDetails;
+
+    const prompt = `You are an expert Interviewer conducting a ${difficulty} ${interviewType} for a candidate named ${fullName}.
   The candidate is applying for the role of ${jobRole} and has ${experienceLevel} of experience.
   The interview duration is set for ${durationMins} minutes.
   Candidate's Resume Text (Use this to personalize questions, but DO NOT mention you are reading it):
@@ -764,37 +765,37 @@ Return a JSON object STRICTLY matching this format:
   1. This is a VOICE-BASED interview. Keep your responses conversational, natural, and concise (under 30 words).
   2. Ask ONE question at a time. Wait for the candidate's answer.
   3. Base your questions on their chosen Job Role (${jobRole}), Experience (${experienceLevel}), Interview Type (${interviewType}), and their Resume.
-  ${isInitial 
-    ? "4. This is the initial greeting. Introduce yourself as the AI Interviewer and ask the first question. DO NOT evaluate anything yet." 
-    : "4. The candidate has answered. Evaluate their answer subtly in your mind, then ask a relevant follow-up question or move to the next topic. DO NOT introduce yourself again."
-  }
+  ${isInitial
+        ? "4. This is the initial greeting. Introduce yourself as the AI Interviewer and ask the first question. DO NOT evaluate anything yet."
+        : "4. The candidate has answered. Evaluate their answer subtly in your mind, then ask a relevant follow-up question or move to the next topic. DO NOT introduce yourself again."
+      }
   5. Do not repeat questions.
   6. Do not provide a long critique of their answer during the interview; save that for the evaluation report.`;
 
-      const aiMessages = [
-        { role: "system", content: prompt },
-        ...messages.map((m: any) => ({ role: m.role, content: m.content }))
-      ];
+    const aiMessages = [
+      { role: "system", content: prompt },
+      ...messages.map((m: any) => ({ role: m.role, content: m.content }))
+    ];
 
-      const response = await openai.chat.completions.create({
-        model: OPENROUTER_MODEL,
-        messages: aiMessages,
-        max_tokens: 200,
-        temperature: 0.7
-      });
+    const response = await openai.chat.completions.create({
+      model: OPENROUTER_MODEL,
+      messages: aiMessages,
+      max_tokens: 200,
+      temperature: 0.7
+    });
 
-      res.json({ success: true, text: response.choices[0]?.message?.content });
-    } catch (err: any) {
-      console.error("Mock Interview Chat Error:", err.message);
-      res.status(500).json({ success: false, error: err.message });
-    }
-  });
+    res.json({ success: true, text: response.choices[0]?.message?.content });
+  } catch (err: any) {
+    console.error("Mock Interview Chat Error:", err.message);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
 
-  app.post("/api/mock-interview-evaluate", async (req, res) => {
-    try {
-      const { messages, candidateDetails } = req.body;
-      
-      const prompt = `You are an expert Interview Assessor evaluating a candidate's performance in a Voice-Based Mock Interview.
+app.post("/api/mock-interview-evaluate", async (req, res) => {
+  try {
+    const { messages, candidateDetails } = req.body;
+
+    const prompt = `You are an expert Interview Assessor evaluating a candidate's performance in a Voice-Based Mock Interview.
   Candidate Details: Role: ${candidateDetails.jobRole}, Experience: ${candidateDetails.experienceLevel}, Type: ${candidateDetails.interviewType}, Difficulty: ${candidateDetails.difficulty}.
   
   Transcript (Generated via Speech-to-Text):
@@ -811,30 +812,30 @@ Return a JSON object STRICTLY matching this format:
     "recommendedAnswers": ["string"],
     "interviewReadinessLevel": "Hire Ready" // or "Needs Practice", "Excellent"
   }`;
-  
-      const response = await openai.chat.completions.create({
-        model: OPENROUTER_MODEL,
-        messages: [{ role: "user", content: prompt }],
-        response_format: { type: "json_object" },
-        max_tokens: 1000,
-        temperature: 0.7
-      });
-      
-      const parsed = JSON.parse(response.choices[0]?.message?.content || "{}");
-      res.json({ success: true, evaluation: parsed });
-    } catch (err: any) {
-      console.error("Mock Interview Evaluate Error:", err.message);
-      res.status(500).json({ success: false, error: err.message });
-    }
-  });
 
-  app.post("/api/generate-readme", async (req, res) => {
-    try {
-      const { type, data } = req.body;
-      
-      let prompt = '';
-      if (type === 'profile') {
-        prompt = `You are an expert developer helping to write a professional GitHub Profile README.
+    const response = await openai.chat.completions.create({
+      model: OPENROUTER_MODEL,
+      messages: [{ role: "user", content: prompt }],
+      response_format: { type: "json_object" },
+      max_tokens: 1000,
+      temperature: 0.7
+    });
+
+    const parsed = JSON.parse(response.choices[0]?.message?.content || "{}");
+    res.json({ success: true, evaluation: parsed });
+  } catch (err: any) {
+    console.error("Mock Interview Evaluate Error:", err.message);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post("/api/generate-readme", async (req, res) => {
+  try {
+    const { type, data } = req.body;
+
+    let prompt = '';
+    if (type === 'profile') {
+      prompt = `You are an expert developer helping to write a professional GitHub Profile README.
 Generate a stunning, ATS-friendly markdown README based on the following details:
 Name: ${data.name}
 Tagline: ${data.tagline}
@@ -854,8 +855,8 @@ Include:
 - Connect with me section.
 - GitHub stats cards (using github-readme-stats formatting).
 Make it look modern, structured, and visually appealing. Output ONLY valid Markdown text, without enclosing it in triple backticks or any other wrapping JSON/text.`;
-      } else {
-        prompt = `You are an expert developer helping to write a professional GitHub Project README.
+    } else {
+      prompt = `You are an expert developer helping to write a professional GitHub Project README.
 Generate a comprehensive, ATS-friendly markdown README based on the following details:
 Project Name: ${data.projectName}
 Description: ${data.description}
@@ -875,29 +876,29 @@ Include:
 - Clear sections for Overview, Features, Tech Stack, Installation, Usage, API documentation, Environment Variables.
 - Use emojis and tables where appropriate.
 Make it look highly professional and ready to be pushed to GitHub. Output ONLY valid Markdown text, without enclosing it in triple backticks or any other wrapping JSON/text.`;
-      }
-
-      const response = await openai.chat.completions.create({
-        model: OPENROUTER_MODEL,
-        messages: [{ role: "user", content: prompt }],
-        max_tokens: 3000,
-        temperature: 0.7
-      });
-      
-      let markdownContent = response.choices[0]?.message?.content || "";
-      
-      res.json({ success: true, content: markdownContent });
-    } catch (err: any) {
-      console.error("Readme Generator Error:", err.message);
-      res.status(500).json({ success: false, error: err.message });
     }
-  });
 
-  app.post("/api/generate-cover-letter", async (req, res) => {
-    try {
-      const { data } = req.body;
-      
-      const prompt = `You are an expert career coach and professional copywriter.
+    const response = await openai.chat.completions.create({
+      model: OPENROUTER_MODEL,
+      messages: [{ role: "user", content: prompt }],
+      max_tokens: 3000,
+      temperature: 0.7
+    });
+
+    let markdownContent = response.choices[0]?.message?.content || "";
+
+    res.json({ success: true, content: markdownContent });
+  } catch (err: any) {
+    console.error("Readme Generator Error:", err.message);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post("/api/generate-cover-letter", async (req, res) => {
+  try {
+    const { data } = req.body;
+
+    const prompt = `You are an expert career coach and professional copywriter.
 Generate a highly professional, personalized, and ATS-friendly cover letter based on the following details:
 
 Candidate Details:
@@ -932,21 +933,21 @@ Instructions:
 7. Tone should be professional, human-like, engaging, and confident. Avoid generic, robotic language.
 8. Output ONLY valid Markdown text, without enclosing it in triple backticks or any other wrapping JSON/text.`;
 
-      const response = await openai.chat.completions.create({
-        model: OPENROUTER_MODEL,
-        messages: [{ role: "user", content: prompt }],
-        max_tokens: 1500,
-        temperature: 0.7
-      });
-      
-      let markdownContent = response.choices[0]?.message?.content || "";
-      
-      res.json({ success: true, content: markdownContent });
-    } catch (err: any) {
-      console.error("Cover Letter Generator Error:", err.message);
-      res.status(500).json({ success: false, error: err.message });
-    }
-  });
+    const response = await openai.chat.completions.create({
+      model: OPENROUTER_MODEL,
+      messages: [{ role: "user", content: prompt }],
+      max_tokens: 1500,
+      temperature: 0.7
+    });
+
+    let markdownContent = response.choices[0]?.message?.content || "";
+
+    res.json({ success: true, content: markdownContent });
+  } catch (err: any) {
+    console.error("Cover Letter Generator Error:", err.message);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
 
 
 app.post("/api/contact", async (req, res) => {

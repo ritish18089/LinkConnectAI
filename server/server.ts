@@ -11,7 +11,7 @@ import fs from "fs";
 import { createRequire } from 'module';
 import { fileURLToPath } from 'url';
 import Tesseract from 'tesseract.js';
-import { parseResume } from './src/services/resumeParser.js';
+import { parseResume } from './src/services/resumeParser.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

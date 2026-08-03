@@ -25,7 +25,7 @@ export async function parseResume(filePath: string, originalName: string, reqId:
         return text.trim();
     } else if (ext === '.docx') {
         console.log(`[REQ: ${reqId}] Parsing method: mammoth`);
-        const result = await mammoth.extractRawText({ path: filePath });
+        const result = await mammoth.extractRawText({ path: filePath } as any);
         return result.value.trim();
     } else if (ext === '.txt') {
         console.log(`[REQ: ${reqId}] Parsing method: txt utf-8`);

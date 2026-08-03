@@ -10,18 +10,18 @@ export default function ResumeAnalyzerHome() {
   const navigate = useNavigate();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { user } = useAuthStore();
-  
+
   const [view, setView] = useState<'home' | 'result' | 'history'>('home');
   const [jobDescription, setJobDescription] = useState('');
   const [resumeFile, setResumeFile] = useState<File | null>(null);
-  
+
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<any>(null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    
+
     // Check file size (10MB)
     if (file.size > 10 * 1024 * 1024) {
       alert("File is too large. Max size is 10MB.");
@@ -50,20 +50,20 @@ export default function ResumeAnalyzerHome() {
         body: formData
       });
       const parseData = await parseRes.json();
-      
+
       if (!parseData.success) {
         throw new Error(parseData.error || "Failed to parse resume");
       }
       const resumeText = parseData.text;
 
       // 2. Analyze
-      const analyzeRes = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/analyze-resume`, {
+      const analyzeRes = await fetch(`${import.meta.env.VITE_API_URL || "https://linkconnect-ai-backend.onrender.com"}/api/analyze-resume`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ resumeText, jobDescription })
       });
       const analyzeData = await analyzeRes.json();
-      
+
       if (!analyzeData.success) {
         throw new Error(analyzeData.error || "Failed to analyze resume");
       }
@@ -107,9 +107,9 @@ export default function ResumeAnalyzerHome() {
         <p className="text-neutral-400 text-lg">
           Analyze your resume against a job description, calculate an ATS score, identify missing keywords, and receive AI-powered improvement suggestions.
         </p>
-        
+
         <div className="mt-6 flex justify-center gap-4">
-          <button 
+          <button
             onClick={() => setView('history')}
             className="flex items-center gap-2 px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg transition-colors"
           >
@@ -122,8 +122,8 @@ export default function ResumeAnalyzerHome() {
         <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
           <Upload className="w-6 h-6 text-indigo-500" /> Upload Resume
         </h2>
-        
-        <div 
+
+        <div
           onClick={() => fileInputRef.current?.click()}
           className="border-2 border-dashed border-neutral-700 hover:border-indigo-500 rounded-xl p-8 text-center cursor-pointer transition-colors bg-neutral-950"
         >
@@ -140,12 +140,12 @@ export default function ResumeAnalyzerHome() {
               <p className="text-neutral-500 text-sm mt-1">PDF or DOCX (Max 10MB)</p>
             </div>
           )}
-          <input 
-            type="file" 
-            ref={fileInputRef} 
-            onChange={handleFileChange} 
-            accept=".pdf,.docx" 
-            className="hidden" 
+          <input
+            type="file"
+            ref={fileInputRef}
+            onChange={handleFileChange}
+            accept=".pdf,.docx"
+            className="hidden"
           />
         </div>
       </div>
@@ -155,14 +155,14 @@ export default function ResumeAnalyzerHome() {
           <h2 className="text-2xl font-bold text-white flex items-center gap-2">
             <FileText className="w-6 h-6 text-indigo-500" /> Paste Job Description
           </h2>
-          <button 
+          <button
             onClick={() => setJobDescription('')}
             className="text-sm text-neutral-400 hover:text-white"
           >
             Clear
           </button>
         </div>
-        
+
         <textarea
           value={jobDescription}
           onChange={(e) => setJobDescription(e.target.value)}

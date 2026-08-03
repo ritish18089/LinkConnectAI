@@ -1,0 +1,34 @@
+{
+  "name": "linkconnect-ai-server",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx server.ts",
+    "dev": "tsx watch server.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.15.0",
+    "@supabase/supabase-js": "^2.110.9",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mammoth": "^1.12.0",
+    "multer": "^2.2.0",
+    "nodemailer": "^9.0.3",
+    "openai": "^7.1.0",
+    "pdfjs-dist": "^6.2.108",
+    "resend": "^6.18.1",
+    "tesseract.js": "^7.0.0",
+    "uuid": "^14.0.1",
+    "tsx": "^4.23.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.14.0",
+    "@types/nodemailer": "^8.0.1",
+    "@types/uuid": "^10.0.0",
+    "typescript": "~5.8.2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "dashboard": {
+    "overview": "ওভারভিউ"
+  },
+  "nav": {
+    "browse_templates": "টেমপ্লেট ব্রাউজ করুন",
+    "ai_assistant": "এআই সহকারী",
+    "resume_templates": "রেজুমে টেমপ্লেট",
+    "placement_support": "প্লেসমেন্ট সাপোর্ট",
+    "mock_interview": "মক ইন্টারভিউ",
+    "resume_analyzer": "রেজুমে বিশ্লেষক",
+    "readme_generator": "README জেনারেটর",
+    "cover_letter_generator": "কভার লেটার জেনারেটর",
+    "saved_templates": "সংরক্ষিত টেমপ্লেট",
+    "profile": "প্রোফাইল",
+    "settings": "সেটিংস"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "dashboard": {
+    "overview": "अवलोकन"
+  },
+  "nav": {
+    "browse_templates": "टेम्पलेट्स ब्राउज़ करें",
+    "ai_assistant": "एआई असिस्टेंट",
+    "resume_templates": "रेज़्यूमे टेम्पलेट्स",
+    "placement_support": "प्लेसमेंट सपोर्ट",
+    "mock_interview": "मॉक इंटरव्यू",
+    "resume_analyzer": "रेज़्यूमे विश्लेषक",
+    "readme_generator": "README जनरेटर",
+    "cover_letter_generator": "कवर लेटर जनरेटर",
+    "saved_templates": "सहेजे गए टेम्पलेट्स",
+    "profile": "प्रोफ़ाइल",
+    "settings": "सेटिंग्स"
+  }
+}

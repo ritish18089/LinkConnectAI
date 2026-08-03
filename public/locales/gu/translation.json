@@ -1,0 +1,18 @@
+{
+  "dashboard": {
+    "overview": "ઝાંખી"
+  },
+  "nav": {
+    "browse_templates": "ટેમ્પ્લેટ્સ બ્રાઉઝ કરો",
+    "ai_assistant": "AI સહાયક",
+    "resume_templates": "રેઝ્યૂમે ટેમ્પ્લેટ્સ",
+    "placement_support": "પ્લેસમેન્ટ સપોર્ટ",
+    "mock_interview": "મોક ઇન્ટરવ્યુ",
+    "resume_analyzer": "રેઝ્યૂમે વિશ્લેષક",
+    "readme_generator": "README જનરેટર",
+    "cover_letter_generator": "કવર લેટર જનરેટર",
+    "saved_templates": "સાચવેલા ટેમ્પ્લેટ્સ",
+    "profile": "પ્રોફાઇલ",
+    "settings": "સેટિંગ્સ"
+  }
+}

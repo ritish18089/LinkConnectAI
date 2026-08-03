@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 1",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 2,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 2",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 3,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 3",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. Thank you for your time and consideration.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 4,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 4",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 5,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 5",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. I look forward to hearing from you.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 6,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 6",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. Thank you for your time and consideration.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 7,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 7",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 8,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 8",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. I look forward to hearing from you.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 9,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 9",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. Thank you for your time and consideration.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 10,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 10",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 11,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 11",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 12,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 12",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. Thank you for your time and consideration.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 13,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 13",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 14,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 14",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. I look forward to hearing from you.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 15,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 15",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. Thank you for your time and consideration.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 16,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 16",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 17,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 17",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 18,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 18",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. Thank you for your time and consideration.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 19,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 19",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 20,
+    "category": "Connection Request",
+    "title": "Connection Request - Option 20",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am a {role} at {company} and would like to connect.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I noticed your professional background in {technology} and would value the opportunity to connect.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I have been following your professional contributions regarding {technology}. As a {role} at {company}, I am looking to expand my network with industry professionals and would be honored to connect with you. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 21,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 1",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 22,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 2",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. I look forward to hearing from you.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 23,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 3",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. Thank you for your time and consideration.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 24,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 4",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 25,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 5",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. I look forward to hearing from you.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 26,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 6",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. Thank you for your time and consideration.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 27,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 7",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 28,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 8",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. I look forward to hearing from you.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 29,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 9",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. Thank you for your time and consideration.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 30,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 10",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 31,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 11",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 32,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 12",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. Thank you for your time and consideration.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 33,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 13",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 34,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 14",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. I look forward to hearing from you.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 35,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 15",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. Thank you for your time and consideration.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 36,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 16",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 37,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 17",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. I look forward to hearing from you.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 38,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 18",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. Thank you for your time and consideration.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 39,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 19",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 40,
+    "category": "Referral Request",
+    "title": "Referral Request - Option 20",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am applying for the {role} position at {company} and would appreciate a referral.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am interested in the {role} position at {company}. Would you be available for a brief discussion regarding a potential referral?\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I hope this message finds you well. I am highly interested in the {role} position at {company} utilizing {technology}. Given your experience, I would greatly appreciate any guidance or a professional referral you might be able to provide. I look forward to hearing from you.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 41,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 1",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 42,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 2",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 43,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 3",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. Thank you for your time and consideration.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 44,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 4",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 45,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 5",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. I look forward to hearing from you.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 46,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 6",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. Thank you for your time and consideration.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 47,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 7",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 48,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 8",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. I look forward to hearing from you.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 49,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 9",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. Thank you for your time and consideration.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 50,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 10",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 51,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 11",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 52,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 12",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. Thank you for your time and consideration.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 53,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 13",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 54,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 14",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 55,
+    "category": "Job Opportunity",
+    "title": "Job Opportunity - Option 15",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am inquiring about potential {role} opportunities at {company}.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a {role} experienced in {technology}, I am inquiring if {company} is currently expanding its team.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I have long respected {company}'s work in the industry. As a professional {role} with extensive experience in {technology}, I am reaching out to inquire about any current or upcoming opportunities on your team. Thank you for your time and consideration.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 56,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 1",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 57,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 2",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further. I look forward to hearing from you.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 58,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 3",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further. Thank you for your time and consideration.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 59,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 4",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 60,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 5",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further. I look forward to hearing from you.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 61,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 6",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further. Thank you for your time and consideration.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 62,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 7",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 63,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 8",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 64,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 9",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further. Thank you for your time and consideration.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 65,
+    "category": "Recruiter / HR Outreach",
+    "title": "Recruiter / HR Outreach - Option 10",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am recruiting for a {role} position that matches your background.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, your expertise in {technology} aligns well with a {role} position I am currently recruiting for at {company}.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am a recruiter representing {company}. Your professional background in {technology} strongly aligns with a newly opened {role} position on our team. I would welcome the opportunity to discuss this role with you further.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 66,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 1",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 67,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 2",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program. I look forward to hearing from you.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 68,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 3",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program. Thank you for your time and consideration.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 69,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 4",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 70,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 5",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program. I look forward to hearing from you.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 71,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 6",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program. Thank you for your time and consideration.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 72,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 7",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 73,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 8",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 74,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 9",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program. Thank you for your time and consideration.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 75,
+    "category": "Internship Request",
+    "title": "Internship Request - Option 10",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking a {role} internship opportunity at {company}.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am currently studying {technology} and would appreciate the opportunity to discuss {role} internships at {company}.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am actively seeking a {role} internship where I can apply my academic background in {technology}. I have deep respect for the work at {company} and would be grateful for a brief conversation regarding your internship program.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 76,
+    "category": "Networking",
+    "title": "Networking - Option 1",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nSincerely,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 77,
+    "category": "Networking",
+    "title": "Networking - Option 2",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives. I look forward to hearing from you.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 78,
+    "category": "Networking",
+    "title": "Networking - Option 3",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives. Thank you for your time and consideration.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 79,
+    "category": "Networking",
+    "title": "Networking - Option 4",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 80,
+    "category": "Networking",
+    "title": "Networking - Option 5",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives. I look forward to hearing from you.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 81,
+    "category": "Networking",
+    "title": "Networking - Option 6",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives. Thank you for your time and consideration.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 82,
+    "category": "Networking",
+    "title": "Networking - Option 7",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 83,
+    "category": "Networking",
+    "title": "Networking - Option 8",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives. I look forward to hearing from you.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 84,
+    "category": "Networking",
+    "title": "Networking - Option 9",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives. Thank you for your time and consideration.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 85,
+    "category": "Networking",
+    "title": "Networking - Option 10",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I would like to connect to discuss developments in {technology}.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, as a fellow {role}, I would value the opportunity to connect and exchange professional insights.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I am seeking to connect with seasoned {role} professionals. Your work at {company} in the area of {technology} is notable, and I would appreciate the opportunity to exchange industry perspectives.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 86,
+    "category": "Follow-up",
+    "title": "Follow-up - Option 1",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am following up regarding the {role} position.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am following up on our recent correspondence regarding the {role} opportunity at {company}.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to follow up on our previous discussion concerning the {role} position and {technology}. Please let me know if you require any additional information from my side at this time.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 87,
+    "category": "Follow-up",
+    "title": "Follow-up - Option 2",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am following up regarding the {role} position.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am following up on our recent correspondence regarding the {role} opportunity at {company}.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to follow up on our previous discussion concerning the {role} position and {technology}. Please let me know if you require any additional information from my side at this time. I look forward to hearing from you.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 88,
+    "category": "Follow-up",
+    "title": "Follow-up - Option 3",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am following up regarding the {role} position.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am following up on our recent correspondence regarding the {role} opportunity at {company}.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to follow up on our previous discussion concerning the {role} position and {technology}. Please let me know if you require any additional information from my side at this time. Thank you for your time and consideration.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 89,
+    "category": "Follow-up",
+    "title": "Follow-up - Option 4",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am following up regarding the {role} position.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am following up on our recent correspondence regarding the {role} opportunity at {company}.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to follow up on our previous discussion concerning the {role} position and {technology}. Please let me know if you require any additional information from my side at this time.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 90,
+    "category": "Follow-up",
+    "title": "Follow-up - Option 5",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am following up regarding the {role} position.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, I am following up on our recent correspondence regarding the {role} opportunity at {company}.\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to follow up on our previous discussion concerning the {role} position and {technology}. Please let me know if you require any additional information from my side at this time. I look forward to hearing from you.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 91,
+    "category": "Thank You",
+    "title": "Thank You - Option 1",
+    "tone": "Professional",
+    "short_message": "Dear {name}, thank you for your time and professional insights.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, thank you for the informative discussion regarding the {role} position at {company}.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to express my gratitude for the time you took to speak with me today. Your insights into {technology} and the {role} position at {company} were highly valuable, and I appreciate your professional guidance.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 92,
+    "category": "Thank You",
+    "title": "Thank You - Option 2",
+    "tone": "Professional",
+    "short_message": "Dear {name}, thank you for your time and professional insights.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, thank you for the informative discussion regarding the {role} position at {company}.\n\nThank you,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to express my gratitude for the time you took to speak with me today. Your insights into {technology} and the {role} position at {company} were highly valuable, and I appreciate your professional guidance. I look forward to hearing from you.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 93,
+    "category": "Thank You",
+    "title": "Thank You - Option 3",
+    "tone": "Professional",
+    "short_message": "Dear {name}, thank you for your time and professional insights.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, thank you for the informative discussion regarding the {role} position at {company}.\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to express my gratitude for the time you took to speak with me today. Your insights into {technology} and the {role} position at {company} were highly valuable, and I appreciate your professional guidance. Thank you for your time and consideration.\n\nThank you,\n{sender_name}"
+  },
+  {
+    "id": 94,
+    "category": "Thank You",
+    "title": "Thank You - Option 4",
+    "tone": "Professional",
+    "short_message": "Dear {name}, thank you for your time and professional insights.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, thank you for the informative discussion regarding the {role} position at {company}.\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to express my gratitude for the time you took to speak with me today. Your insights into {technology} and the {role} position at {company} were highly valuable, and I appreciate your professional guidance.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 95,
+    "category": "Thank You",
+    "title": "Thank You - Option 5",
+    "tone": "Professional",
+    "short_message": "Dear {name}, thank you for your time and professional insights.\n\nWarm regards,\n{sender_name}",
+    "medium_message": "Dear {name}, thank you for the informative discussion regarding the {role} position at {company}.\n\nBest regards,\n{sender_name}",
+    "long_message": "Dear {name}, I am writing to express my gratitude for the time you took to speak with me today. Your insights into {technology} and the {role} position at {company} were highly valuable, and I appreciate your professional guidance. I look forward to hearing from you.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 96,
+    "category": "Career Advice / Mentorship",
+    "title": "Career Advice / Mentorship - Option 1",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking career advice regarding the {role} profession.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, your professional trajectory at {company} is commendable. Would you be open to a brief informational interview?\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, as a junior {role}, I have great respect for your professional accomplishments at {company}. I am currently focusing on {technology} and would be extremely grateful if you would be open to a brief conversation to share some career advice.\n\nSincerely,\n{sender_name}"
+  },
+  {
+    "id": 97,
+    "category": "Career Advice / Mentorship",
+    "title": "Career Advice / Mentorship - Option 2",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking career advice regarding the {role} profession.\n\nThank you,\n{sender_name}",
+    "medium_message": "Dear {name}, your professional trajectory at {company} is commendable. Would you be open to a brief informational interview?\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, as a junior {role}, I have great respect for your professional accomplishments at {company}. I am currently focusing on {technology} and would be extremely grateful if you would be open to a brief conversation to share some career advice. I look forward to hearing from you.\n\nBest regards,\n{sender_name}"
+  },
+  {
+    "id": 98,
+    "category": "Career Advice / Mentorship",
+    "title": "Career Advice / Mentorship - Option 3",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking career advice regarding the {role} profession.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, your professional trajectory at {company} is commendable. Would you be open to a brief informational interview?\n\nWarm regards,\n{sender_name}",
+    "long_message": "Dear {name}, as a junior {role}, I have great respect for your professional accomplishments at {company}. I am currently focusing on {technology} and would be extremely grateful if you would be open to a brief conversation to share some career advice. Thank you for your time and consideration.\n\nWarm regards,\n{sender_name}"
+  },
+  {
+    "id": 99,
+    "category": "Career Advice / Mentorship",
+    "title": "Career Advice / Mentorship - Option 4",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking career advice regarding the {role} profession.\n\nBest regards,\n{sender_name}",
+    "medium_message": "Dear {name}, your professional trajectory at {company} is commendable. Would you be open to a brief informational interview?\n\nKind regards,\n{sender_name}",
+    "long_message": "Dear {name}, as a junior {role}, I have great respect for your professional accomplishments at {company}. I am currently focusing on {technology} and would be extremely grateful if you would be open to a brief conversation to share some career advice.\n\nKind regards,\n{sender_name}"
+  },
+  {
+    "id": 100,
+    "category": "Career Advice / Mentorship",
+    "title": "Career Advice / Mentorship - Option 5",
+    "tone": "Professional",
+    "short_message": "Dear {name}, I am seeking career advice regarding the {role} profession.\n\nKind regards,\n{sender_name}",
+    "medium_message": "Dear {name}, your professional trajectory at {company} is commendable. Would you be open to a brief informational interview?\n\nSincerely,\n{sender_name}",
+    "long_message": "Dear {name}, as a junior {role}, I have great respect for your professional accomplishments at {company}. I am currently focusing on {technology} and would be extremely grateful if you would be open to a brief conversation to share some career advice. I look forward to hearing from you.\n\nThank you,\n{sender_name}"
+  }
+]

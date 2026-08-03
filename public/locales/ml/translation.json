@@ -1,0 +1,18 @@
+{
+  "dashboard": {
+    "overview": "അവലോകനം"
+  },
+  "nav": {
+    "browse_templates": "ടെംപ്ലേറ്റുകൾ ബ്രൗസ് ചെയ്യുക",
+    "ai_assistant": "AI അസിസ്റ്റന്റ്",
+    "resume_templates": "റെസ്യൂമെ ടെംപ്ലേറ്റുകൾ",
+    "placement_support": "പ്ലേസ്മെന്റ് പിന്തുണ",
+    "mock_interview": "മോക്ക് ഇന്റർവ്യൂ",
+    "resume_analyzer": "റെസ്യൂമെ അനലൈസർ",
+    "readme_generator": "README ജനറേറ്റർ",
+    "cover_letter_generator": "കവർ ലെറ്റർ ജനറേറ്റർ",
+    "saved_templates": "സേവ് ചെയ്ത ടെംപ്ലേറ്റുകൾ",
+    "profile": "പ്രൊഫൈൽ",
+    "settings": "സെറ്റിങ്സ്"
+  }
+}

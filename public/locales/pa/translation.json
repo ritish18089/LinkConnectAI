@@ -1,0 +1,18 @@
+{
+  "dashboard": {
+    "overview": "ਸੰਖੇਪ ਜਾਣਕਾਰੀ"
+  },
+  "nav": {
+    "browse_templates": "ਟੈਂਪਲੇਟਸ ਬ੍ਰਾਊਜ਼ ਕਰੋ",
+    "ai_assistant": "AI ਸਹਾਇਕ",
+    "resume_templates": "ਰੈਜ਼ਿਊਮੇ ਟੈਂਪਲੇਟਸ",
+    "placement_support": "ਪਲੇਸਮੈਂਟ ਸਹਾਇਤਾ",
+    "mock_interview": "ਮੌਕ ਇੰਟਰਵਿਊ",
+    "resume_analyzer": "ਰੈਜ਼ਿਊਮੇ ਵਿਸ਼ਲੇਸ਼ਕ",
+    "readme_generator": "README ਜਨਰੇਟਰ",
+    "cover_letter_generator": "ਕਵਰ ਲੈਟਰ ਜਨਰੇਟਰ",
+    "saved_templates": "ਸੇਵ ਕੀਤੇ ਟੈਂਪਲੇਟਸ",
+    "profile": "ਪ੍ਰੋਫਾਈਲ",
+    "settings": "ਸੈਟਿੰਗਜ਼"
+  }
+}

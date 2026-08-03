@@ -1,0 +1,18 @@
+{
+  "dashboard": {
+    "overview": "ಅವಲೋಕನ"
+  },
+  "nav": {
+    "browse_templates": "ಟೆಂಪ್ಲೇಟ್‌ಗಳನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ",
+    "ai_assistant": "AI ಸಹಾಯಕ",
+    "resume_templates": "ರೆಸ್ಯೂಮೆ ಟೆಂಪ್ಲೇಟ್‌ಗಳು",
+    "placement_support": "ಉದ್ಯೋಗ ಬೆಂಬಲ",
+    "mock_interview": "ಮಣಕು ಸಂದರ್ಶನ",
+    "resume_analyzer": "ರೆಸ್ಯೂಮೆ ವಿಶ್ಲೇಷಕ",
+    "readme_generator": "README ಜನರೇಟರ್",
+    "cover_letter_generator": "ಕವರ್ ಲೆಟರ್ ಜನರೇಟರ್",
+    "saved_templates": "ಉಳಿಸಿದ ಟೆಂಪ್ಲೇಟ್‌ಗಳು",
+    "profile": "ಪ್ರೊಫೈಲ್",
+    "settings": "ಸೆಟ್ಟಿಂಗ್ಸ್"
+  }
+}

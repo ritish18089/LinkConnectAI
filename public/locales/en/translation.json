@@ -1,0 +1,18 @@
+{
+  "dashboard": {
+    "overview": "Overview"
+  },
+  "nav": {
+    "browse_templates": "Browse Templates",
+    "ai_assistant": "AI Assistant",
+    "resume_templates": "Resume Templates",
+    "placement_support": "Placement Support",
+    "mock_interview": "Mock Interview",
+    "resume_analyzer": "Resume Analyzer",
+    "readme_generator": "README Generator",
+    "cover_letter_generator": "Cover Letter Generator",
+    "saved_templates": "Saved Templates",
+    "profile": "Profile",
+    "settings": "Settings"
+  }
+}

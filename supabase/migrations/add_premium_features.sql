@@ -1,0 +1,5 @@
+ALTER TABLE public.generated_messages 
+ADD COLUMN IF NOT EXISTS recommended_message_index INTEGER,
+ADD COLUMN IF NOT EXISTS scores JSONB,
+ADD COLUMN IF NOT EXISTS icebreaker TEXT,
+ADD COLUMN IF NOT EXISTS tips JSONB;

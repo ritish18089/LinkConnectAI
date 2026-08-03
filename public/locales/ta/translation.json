@@ -1,0 +1,18 @@
+{
+  "dashboard": {
+    "overview": "மேலோட்டம்"
+  },
+  "nav": {
+    "browse_templates": "வார்ப்புருக்களை உலாவுக",
+    "ai_assistant": "AI உதவியாளர்",
+    "resume_templates": "ரெஸ்யூம் வார்ப்புருக்கள்",
+    "placement_support": "வேலை வாய்ப்பு ஆதரவு",
+    "mock_interview": "மாதிரி நேர்காணல்",
+    "resume_analyzer": "ரெஸ்யூம் பகுப்பாய்வி",
+    "readme_generator": "README ஜெனரேட்டர்",
+    "cover_letter_generator": "கடித ஜெனரேட்டர்",
+    "saved_templates": "சேமிக்கப்பட்ட வார்ப்புருக்கள்",
+    "profile": "சுயவிவரம்",
+    "settings": "அமைப்புகள்"
+  }
+}

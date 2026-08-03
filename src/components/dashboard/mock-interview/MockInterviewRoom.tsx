@@ -66,7 +66,7 @@ export default function MockInterviewRoom() {
     // Initial fetch to get the first question
     const fetchInitial = async () => {
       try {
-        const res = await fetch('http://localhost:3000/api/mock-interview-chat', {
+        const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/mock-interview-chat`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -229,7 +229,7 @@ export default function MockInterviewRoom() {
 
       const fetchAIResponse = async () => {
         try {
-          const res = await fetch('http://localhost:3000/api/mock-interview-chat', {
+          const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/mock-interview-chat`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -303,7 +303,7 @@ export default function MockInterviewRoom() {
     await speakText(endText);
     
     try {
-      const res = await fetch('http://localhost:3000/api/mock-interview-evaluate', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/mock-interview-evaluate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages, candidateDetails })

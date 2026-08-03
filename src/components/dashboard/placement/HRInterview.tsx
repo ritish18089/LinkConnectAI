@@ -82,7 +82,7 @@ export default function HRInterview() {
       const formData = new FormData();
       formData.append('resume', file);
 
-      const res = await fetch('http://localhost:3000/api/parse-resume', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/parse-resume`, {
         method: 'POST',
         body: formData,
       });
@@ -245,7 +245,7 @@ export default function HRInterview() {
     if (currentSpeaker === 'AI HR Recruiter' && messages.length > 1) {
       const fetchAIResponse = async () => {
         try {
-          const res = await fetch('http://localhost:3000/api/hr-chat', {
+          const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/hr-chat`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -320,7 +320,7 @@ export default function HRInterview() {
     setStep('evaluation');
     
     try {
-      const res = await fetch('http://localhost:3000/api/hr-evaluate', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/hr-evaluate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages })

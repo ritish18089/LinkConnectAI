@@ -42,9 +42,15 @@ if (!fs.existsSync('uploads')) {
   console.log("📁 Created 'uploads/' directory for multer");
 }
 console.log("🔥 STARTING SERVER.TS WITH PROPER LOGGING AND NO FALLBACKS");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    process.env.FRONTEND_URL || ""
+  ].filter(Boolean),
+  credentials: true
+}));
 app.use(express.json());
 
 if (!process.env.OPENROUTER_API_KEY) {
@@ -65,6 +71,13 @@ const OPENROUTER_MODEL = "google/gemini-2.5-flash";
 
 app.get("/", (_req, res) => {
   res.json({ message: "LinkConnect AI Backend Running (OpenRouter) 🚀" });
+});
+
+app.get("/api/health", (req, res) => {
+  res.json({
+    success: true,
+    message: "Backend is running."
+  });
 });
 
 app.post("/test", (req, res) => {
@@ -1008,7 +1021,7 @@ ${new Date().toISOString()}
   }
 });
 
-app.listen(PORT, () => {
+app.listen(Number(PORT), "0.0.0.0", () => {
   console.log(`\n====================================`);
   console.log(`🚀 Backend running at http://localhost:${PORT}`);
   console.log(`Node Version: ${process.version}`);

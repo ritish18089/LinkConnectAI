@@ -129,7 +129,7 @@ export default function AIAssistant() {
     formData.append('resume', file);
 
     try {
-      const res = await fetch('http://localhost:3000/api/ai/parse-resume', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/ai/parse-resume`, {
         method: 'POST',
         body: formData
       });

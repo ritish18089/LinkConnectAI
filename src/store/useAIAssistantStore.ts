@@ -162,7 +162,7 @@ export const useAIAssistantStore = create<AIAssistantState>((set, get) => ({
 
     try {
       console.log("➡️ [FRONTEND] Request sent to backend for streaming (/api/ai/chat).");
-      const response = await fetch('http://localhost:3000/api/ai/chat', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/ai/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
@@ -239,7 +239,7 @@ export const useAIAssistantStore = create<AIAssistantState>((set, get) => ({
       // Generate smart title if it's the first message
       if (updatedMessages.length === 1) {
         try {
-          const titleRes = await fetch('http://localhost:3000/api/ai/generate-title', {
+          const titleRes = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/ai/generate-title`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: content })

@@ -244,7 +244,7 @@ export default function VirtualGDRoom({ topic, durationMins, onExit }: VirtualGD
     if (currentSpeaker !== 'You (Candidate)' && currentSpeaker !== 'Moderator') {
       const fetchAIResponse = async () => {
         try {
-          const res = await fetch('http://localhost:3000/api/gd-chat', {
+          const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/gd-chat`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -321,7 +321,7 @@ export default function VirtualGDRoom({ topic, durationMins, onExit }: VirtualGD
     await speakText(endText, 'Moderator');
     
     try {
-      const res = await fetch('http://localhost:3000/api/gd-evaluate', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/gd-evaluate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ topic, messages })

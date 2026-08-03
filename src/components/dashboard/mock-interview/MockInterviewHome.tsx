@@ -39,7 +39,7 @@ export default function MockInterviewHome() {
     const formData = new FormData();
     formData.append('resume', file);
     try {
-      const res = await fetch('http://localhost:3000/api/parse-resume', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/parse-resume`, {
         method: 'POST',
         body: formData
       });

@@ -45,7 +45,7 @@ export default function ResumeAnalyzerHome() {
       // 1. Parse Resume
       const formData = new FormData();
       formData.append('resume', resumeFile);
-      const parseRes = await fetch('http://localhost:3000/api/parse-resume', {
+      const parseRes = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/parse-resume`, {
         method: 'POST',
         body: formData
       });
@@ -57,7 +57,7 @@ export default function ResumeAnalyzerHome() {
       const resumeText = parseData.text;
 
       // 2. Analyze
-      const analyzeRes = await fetch('http://localhost:3000/api/analyze-resume', {
+      const analyzeRes = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/analyze-resume`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ resumeText, jobDescription })

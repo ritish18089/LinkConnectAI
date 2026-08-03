@@ -7,15 +7,15 @@ import Tesseract from 'tesseract.js';
 
 export async function parseResume(filePath: string, originalName: string, reqId: string = 'SYS'): Promise<string> {
     const ext = path.extname(originalName).toLowerCase();
-
+    
     if (ext === '.pdf') {
         console.log(`[REQ: ${reqId}] Parsing method: pdfjs-dist`);
         const dataBuffer = fs.readFileSync(filePath);
         const dataArray = new Uint8Array(dataBuffer);
-
+        
         const loadingTask = pdfjsLib.getDocument({ data: dataArray });
         const pdf = await loadingTask.promise;
-
+        
         let text = "";
         for (let i = 1; i <= pdf.numPages; i++) {
             const page = await pdf.getPage(i);
@@ -41,6 +41,6 @@ export async function parseResume(filePath: string, originalName: string, reqId:
         });
         return result.data.text.trim();
     }
-
+    
     throw new Error(`Unsupported extension: ${ext}`);
 }

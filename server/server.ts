@@ -948,13 +948,8 @@ Instructions:
     res.status(500).json({ success: false, error: err.message });
   }
 });
-app.get("/api/contact", (req, res) => {
-  res.json({
-    success: true,
-    message: "Contact API is running"
-  });
-});
-app.post("/api/contact", async (req, res) => {
+
+app.get("/api/contact", async (req, res) => {
   console.log("✓ Request received");
   try {
     const { name, email, subject, message } = req.body;

@@ -210,32 +210,6 @@ http://localhost:10000
 |**Render Backend Demo URL**| [![Live on Render](https://img.shields.io/badge/Live%20on-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://linkconnect-ai-backend.onrender.com)|
 | **Guithub Repo URL** |[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ritish18089/LinkConnectAI) |
 
-
----
-
-## 🔐 Authentication
-
-- Email & Password
-- LinkedIn OAuth
-- Google Authentication
-
----
-
-## 📸 Screens
-
-- Home
-- Resume Builder
-- Resume Analysis
-- AI Career Assistant
-- Interview Preparation
-- LinkedIn Assistant
-- Profile
-- Settings
-- Help Center
-- Contact
-
----
-
 ## 🎯 Future Enhancements
 
 - AI Resume Matching
@@ -249,26 +223,6 @@ http://localhost:10000
 - Job Application Tracker
 - Career Analytics Dashboard
 - Mobile Application
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push the branch
-5. Create a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
 
 ## 👨‍💻 Developer
 

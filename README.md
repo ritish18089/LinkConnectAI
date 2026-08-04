@@ -134,44 +134,82 @@ RESEND_API_KEY=your_resend_api_key
 
 ## Screenshots
 
+## 📋 Prerequisites
+Before setting up and running **LinkConnect AI**, ensure you have the following installed and configured:
+- **Node.js** (v18 or later)
+- **npm** (Node Package Manager)
+- **Git**
+- **Visual Studio Code** (Recommended)
+- **Supabase** project for database and authentication
+- **OpenRouter API** key for AI-powered features
+- **Resend API** key for email services
+- **Vercel** account for frontend deployment (optional)
+- **Render** account for backend deployment (optional)
+- A modern web browser (Google Chrome, Microsoft Edge, Firefox, or Safari)
 
+## ⚙ Installation Steps
+- Ensure **Node.js (v18 or later)** and **npm (Node Package Manager)** are installed on your system.
+- Clone this repository to your local machine using Git.
+- Navigate to the project directory.
+- Install all required dependencies for both the frontend and backend.
+- Create the required `.env` files and configure all environment variables.
+- Start the frontend and backend development servers.
 
-## 🚀 Installation
+## 📂 How to Run
 
-### Clone Repository
-
+1. Clone the Repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/ritish18089/LinkConnectAI.git
 ```
-
-### Frontend
-
+2. Navigate to the Project Directory:
 ```bash
-cd frontend
+cd LinkConnectAI
+```
+3. Frontend Setup(client):
+- Navigate to the Frontend Directory:
+```bash
+cd client
+```
+- Install Dependencies:
+```bash
 npm install
+```
+- Create a `.env` file in the **frontend(client)** directory and add the required environment variables.
+- Start the Frontend Development Server:
+```bash
 npm run dev
 ```
-
-### Backend
-
+- Frontend will be available at:
+```text
+http://localhost:5173
+```
+4. Backend Setup(server):
+- Navigate to the Backend Directory:
 ```bash
-cd backend
+cd server
+```
+- Install Dependencies:
+```bash
 npm install
+```
+- Create a `.env` file in the **backend(server)** directory and add the required environment variables.
+- Start the Backend Development Server:
+```bash
 npm run dev
 ```
+- Backend API will be available at:
+```text
+http://localhost:10000
+```
 
----
+## 🌐 Live Links
 
-## 🌐 Deployment
+| Resource | Link |
+|----------|------|
+| **Vercel Frontend Demo URL**|[![Live on Vercel](https://img.shields.io/badge/Live%20on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://link-connect-ai.vercel.app)  |
+|**Render Backend Demo URL**| [![Live on Render](https://img.shields.io/badge/Live%20on-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://linkconnect-ai-backend.onrender.com)|
+| **Guithub Repo URL** |[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ritish18089/LinkConnectAI) |
 
-### Frontend
-- Vercel
-
-### Backend
-- Render
-
-### Database
-- Supabase
 
 ---
 

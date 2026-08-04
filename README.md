@@ -79,9 +79,7 @@ LinkConnect AI is an AI-powered career development platform designed to help stu
 
 ## 🛠️ Tech Stack
 
-
 ###  Frontend
-
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)
@@ -91,7 +89,6 @@ LinkConnect AI is an AI-powered career development platform designed to help stu
 ![Zustand](https://img.shields.io/badge/Zustand-764ABC?style=for-the-badge&logo=react&logoColor=white)
 
 ###  Backend
-
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 
@@ -101,58 +98,43 @@ LinkConnect AI is an AI-powered career development platform designed to help stu
 ![Gmail Authentication](https://img.shields.io/badge/Gmail_Authentication-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
 
 ###  AI
-
 ![OpenRouter API](https://img.shields.io/badge/OpenRouter_API-7C3AED?style=for-the-badge&logo=openai&logoColor=white)
 
 ### Email Service
-
 ![Resend API](https://img.shields.io/badge/Resend_API-000000?style=for-the-badge&logo=resend&logoColor=white)
 
 ###  Deployment
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 
-## 📂 Project Structure
+## 🏗️ System Architecture
+<img src="https://github.com/ritish18089/LinkConnectAI/blob/main/LinkArc.png" height="1000px" width="1000px">
 
-```
-LinkConnect-AI
-│
-├── frontend
-│   ├── src
-│   ├── public
-│   └── package.json
-│
-├── backend
-│   ├── server.ts
-│   ├── routes
-│   ├── middleware
-│   └── package.json
-│
-└── README.md
-```
-
----
+## 🔄 Work Flow
+<img src="https://github.com/ritish18089/LinkConnectAI/blob/main/LinkWo.png" height="1000px" width="1000px">
 
 ## 🔑 Environment Variables
 
-### Frontend (.env)
-
+### Client(.env)
 ```env
-VITE_API_URL=
-VITE_SUPABASE_URL=
-VITE_SUPABASE_ANON_KEY=
+VITE_API_URL=your_backend_url
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-### Backend (.env)
-
+### Server(.env)
 ```env
-OPENROUTER_API_KEY=
-RESEND_API_KEY=
-SUPABASE_URL=
-SUPABASE_SERVICE_ROLE_KEY=
+OPENROUTER_API_KEY=your_openrouter_api_key
+APP_URL=your_frontend_url
+JWT_SECRET=your_JWT
+EMAIL_USER=your_admin_email
+EMAIL_PASS=your_gmail_app_password
+RESEND_API_KEY=your_resend_api_key
 ```
 
----
+## Screenshots
+
+
 
 ## 🚀 Installation
 

@@ -80,6 +80,14 @@ export interface ProfileUser {
   experience_level: string | null;
   app_language?: string | null;
   skills: string[] | null;
+  technical_skills?: string[] | null;
+  languages_known?: string[] | null;
+  projects?: any[] | null;
+  experience?: any[] | null;
+  career_interests?: string[] | null;
+  certifications?: any[] | null;
+  participation?: any[] | null;
+  hobbies?: string[] | null;
   created_at: string;
   updated_at: string;
 }

@@ -10,7 +10,8 @@ import { supabase } from '../../../db/supabase';
 import { useAuthStore } from '../../../store/useAuthStore';
 import { useActivityStore } from '../../../store/useActivityStore';
 import { Bell, Trash2, CheckCheck, Eye } from 'lucide-react';
-
+import ProfessionalProfile from './ProfessionalProfile';
+import ProfessionalInformation from './ProfessionalInformation';
 export default function ProfileHome() {
   const { user } = useAuthStore();
   const { notifications, markNotificationRead, clearAllNotifications } = useActivityStore();
@@ -450,122 +451,14 @@ export default function ProfileHome() {
             </div>
           </motion.div>
 
-          {/* ACTIVITY SUMMARY */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6"
-          >
-            <h3 className="text-lg font-bold text-white mb-6">Activity Summary</h3>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <span className="text-neutral-400 text-sm">Resumes Created</span>
-                <span className="text-white font-medium bg-neutral-800 px-3 py-1 rounded-lg text-sm">{profile.total_resumes_created || 0}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-neutral-400 text-sm">Resumes Downloaded</span>
-                <span className="text-white font-medium bg-neutral-800 px-3 py-1 rounded-lg text-sm">{profile.total_resumes_downloaded || 0}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-neutral-400 text-sm">Resume Analysis</span>
-                <span className="text-white font-medium bg-neutral-800 px-3 py-1 rounded-lg text-sm">{stats.resumeAnalyzed}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-neutral-400 text-sm">MCQ Completed</span>
-                <span className="text-white font-medium bg-neutral-800 px-3 py-1 rounded-lg text-sm">{stats.mcqCompleted}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-neutral-400 text-sm">Avg MCQ Score</span>
-                <span className="text-emerald-400 font-medium bg-emerald-500/10 px-3 py-1 rounded-lg text-sm">{stats.mcqAvgScore}%</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-neutral-400 text-sm">GD Sessions</span>
-                <span className="text-white font-medium bg-neutral-800 px-3 py-1 rounded-lg text-sm">{stats.gdCompleted}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-neutral-400 text-sm">HR Interviews</span>
-                <span className="text-white font-medium bg-neutral-800 px-3 py-1 rounded-lg text-sm">{stats.hrCompleted}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-neutral-400 text-sm">Mock Interviews</span>
-                <span className="text-white font-medium bg-neutral-800 px-3 py-1 rounded-lg text-sm">{stats.mockCompleted}</span>
-              </div>
-            </div>
-          </motion.div>
+          <ProfessionalProfile profile={profile} setProfile={setProfile} userId={user!.id} />
 
         </div>
 
         {/* RIGHT COLUMN: Achievements & Recent Activity */}
         <div className="space-y-8 lg:col-span-2">
           
-          {/* NOTIFICATIONS SECTION */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 flex flex-col h-[600px]"
-          >
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                <Bell className="w-5 h-5 text-indigo-400" /> Notifications
-              </h3>
-              <div className="flex gap-2">
-                <button 
-                  onClick={() => {
-                    notifications.forEach(n => {
-                      if (!n.read) markNotificationRead(n.id);
-                    });
-                  }}
-                  className="p-1.5 text-neutral-400 hover:text-white bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors"
-                  title="Mark All as Read"
-                >
-                  <CheckCheck className="w-4 h-4" />
-                </button>
-                <button 
-                  onClick={() => clearAllNotifications(user!.id)}
-                  className="p-1.5 text-red-400 hover:text-red-300 bg-red-500/10 hover:bg-red-500/20 rounded-lg transition-colors"
-                  title="Clear All Notifications"
-                >
-                  <Trash2 className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-            
-            <div className="flex gap-2 mb-6">
-              <button onClick={() => setNotifFilter('all')} className={`px-3 py-1 text-xs font-medium rounded-full ${notifFilter === 'all' ? 'bg-indigo-600 text-white' : 'bg-neutral-800 text-neutral-400 hover:text-white'}`}>All</button>
-              <button onClick={() => setNotifFilter('unread')} className={`px-3 py-1 text-xs font-medium rounded-full ${notifFilter === 'unread' ? 'bg-indigo-600 text-white' : 'bg-neutral-800 text-neutral-400 hover:text-white'}`}>Unread</button>
-              <button onClick={() => setNotifFilter('read')} className={`px-3 py-1 text-xs font-medium rounded-full ${notifFilter === 'read' ? 'bg-indigo-600 text-white' : 'bg-neutral-800 text-neutral-400 hover:text-white'}`}>Read</button>
-            </div>
-
-            <div className="flex-1 overflow-y-auto space-y-3 pr-2 custom-scrollbar">
-              {notifications
-                .filter(n => notifFilter === 'all' ? true : notifFilter === 'read' ? n.read : !n.read)
-                .length === 0 ? (
-                <div className="text-center py-12 text-neutral-500">
-                  <Bell className="w-8 h-8 mx-auto mb-3 opacity-20" />
-                  <p>No notifications found.</p>
-                </div>
-              ) : (
-                notifications
-                  .filter(n => notifFilter === 'all' ? true : notifFilter === 'read' ? n.read : !n.read)
-                  .map(notif => (
-                    <div key={notif.id} className={`p-4 rounded-xl border ${notif.read ? 'bg-neutral-950/50 border-neutral-800' : 'bg-indigo-500/10 border-indigo-500/30'}`}>
-                      <div className="flex justify-between items-start mb-1">
-                        <h4 className={`text-sm font-bold ${notif.read ? 'text-neutral-300' : 'text-indigo-100'}`}>{notif.title}</h4>
-                        {!notif.read && (
-                          <button onClick={() => markNotificationRead(notif.id)} className="text-xs text-indigo-400 hover:text-indigo-300 flex items-center gap-1">
-                            <Eye className="w-3 h-3" /> Mark read
-                          </button>
-                        )}
-                      </div>
-                      <p className={`text-xs ${notif.read ? 'text-neutral-500' : 'text-indigo-200/70'} mb-2`}>{notif.message}</p>
-                      <span className="text-[10px] text-neutral-600">{new Date(notif.created_at).toLocaleString()}</span>
-                    </div>
-                  ))
-              )}
-            </div>
-          </motion.div>
+          <ProfessionalInformation profile={profile} setProfile={setProfile} userId={user!.id} />
 
           {/* RECENT ACTIVITY */}
           <motion.div 

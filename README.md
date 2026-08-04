@@ -242,4 +242,5 @@ I appreciate all feedback!
 
 ## License
 I've released this project under the MIT license:
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/ritish18089/LinkConnectAI/blob/main/LICENSE.md)

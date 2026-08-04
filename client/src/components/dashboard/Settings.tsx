@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { User, Shield, Key, LogOut, CheckCircle2, XCircle, Loader2, Camera, Eye, EyeOff, Smartphone, Globe } from 'lucide-react';
+import { User, Shield, Key, LogOut, CheckCircle2, XCircle, Loader2, Camera, Eye, EyeOff, Smartphone, Globe, HelpCircle } from 'lucide-react';
 import { supabase } from '../../db/supabase';
 import { useAuthStore } from '../../store/useAuthStore';
 import { useNavigate } from 'react-router';
@@ -675,8 +675,25 @@ export default function Settings() {
 
             </div>
           </div>
-        </motion.div>
 
+          {/* Help Center */}
+          <div className="bg-neutral-900/60 backdrop-blur-xl border border-neutral-800 rounded-3xl overflow-hidden relative">
+            <div className="p-6">
+              <button
+                onClick={() => navigate('/dashboard/help')}
+                className="w-full flex items-center justify-between p-4 bg-neutral-950 border border-neutral-800 rounded-xl hover:bg-neutral-800 transition-colors group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center group-hover:bg-indigo-500/30 transition-colors">
+                    <HelpCircle className="w-5 h-5 text-indigo-400" />
+                  </div>
+                  <span className="text-white font-medium text-lg">Help Center</span>
+                </div>
+                <span className="text-neutral-500 group-hover:text-neutral-300 transition-colors">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

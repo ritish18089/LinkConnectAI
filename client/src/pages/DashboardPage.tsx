@@ -43,6 +43,7 @@ import ResumeAnalyzerHome from "../components/dashboard/resume-analyzer/ResumeAn
 import ProfileHome from "../components/dashboard/profile/ProfileHome";
 import ReadmeGeneratorHome from "../components/dashboard/readme-generator/ReadmeGeneratorHome";
 import CoverLetterHome from "../components/dashboard/cover-letter/CoverLetterHome";
+import HelpCenter from "../components/dashboard/HelpCenter";
 
 export default function DashboardPage() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -157,6 +158,8 @@ export default function DashboardPage() {
         return "Profile";
       case "/dashboard/settings":
         return "Settings";
+      case "/dashboard/help":
+        return "Help Center";
       default:
         if (location.pathname.startsWith("/dashboard/resume-templates/edit")) return "Resume Editor";
         return "Dashboard";
@@ -316,6 +319,7 @@ export default function DashboardPage() {
               <Route path="/cover-letter/*" element={<CoverLetterHome />} />
               <Route path="/profile" element={<ProfileHome />} />
               <Route path="/settings" element={<SettingsComponent />} />
+              <Route path="/help" element={<HelpCenter />} />
             </Routes>
 
           </div>

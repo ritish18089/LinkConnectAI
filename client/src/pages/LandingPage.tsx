@@ -34,21 +34,28 @@ export default function LandingPage() {
     setToast(null);
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
+      const baseUrl = (import.meta.env.VITE_API_URL || 'https://linkconnect-ai-backend.onrender.com/api/contact').replace(/\/+$/, '');
+      const response = await fetch(`${baseUrl}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
+      const contentType = response.headers.get('content-type');
       if (!response.ok) {
-        const text = await response.text();
-        throw new Error(text);
+        const errorText = await response.text();
+        throw new Error(`Server returned ${response.status}: ${errorText || response.statusText}`);
       }
-      const data = await response.json();
-      if (data.success) {
-        setToast({ type: 'success', message: "Your message has been sent successfully." });
-        setFormData({ name: '', email: '', subject: '', message: '' });
+
+      if (contentType && contentType.includes('application/json')) {
+        const data = await response.json();
+        if (data.success) {
+          setToast({ type: 'success', message: "Your message has been sent successfully." });
+          setFormData({ name: '', email: '', subject: '', message: '' });
+        } else {
+          setToast({ type: 'error', message: data.message || "Unable to send your message." });
+        }
       } else {
-        setToast({ type: 'error', message: data.message || "Unable to send your message. Please try again later." });
+        throw new Error("Unexpected response format from server.");
       }
     } catch (err: any) {
       setToast({ type: 'error', message: err.message || "Unable to send your message. Please try again later." });

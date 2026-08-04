@@ -240,11 +240,6 @@ I'd love your input! Please:
 
 I appreciate all feedback!
 
-
-## ⭐ Support
-
-If you found this project helpful, please give it a ⭐ on GitHub.
-
----
-
-**Made with ❤️ using React, TypeScript, Node.js, Supabase, OpenRouter AI, and Resend.**
+## License
+I've released this project under the MIT license:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/ritish18089/LinkConnectAI/blob/main/LICENSE.md)

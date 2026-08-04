@@ -245,4 +245,6 @@ I've released this project under the MIT license:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/ritish18089/LinkConnectAI/blob/main/LICENSE.md)
 
+
+## Footer Fork & Star
 If you like this project, please [⭐ star](https://github.com/ritish18089/LinkConnectAI) and [fork](https://github.com/ritish18089/LinkConnectAI) it!

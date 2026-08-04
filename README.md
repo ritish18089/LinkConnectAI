@@ -1,16 +1,19 @@
-# 🚀 LinkConnect AI
+<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/client/public/logo1.png" height="200px" width="200px"></p>
 
-> An AI-powered career development platform that helps students, freshers, and professionals build resumes, prepare for interviews, enhance LinkedIn profiles, and accelerate their careers using AI.
-
----
+# <p align="center"> LinkConnect AI - 🤖 AI Powered Career Development Platform </p>
+A brief description of what this project does and who it's for.
 
 ## 📌 Overview
-
-LinkConnect AI is an intelligent career assistant designed to simplify the job preparation process. It combines resume optimization, AI career guidance, interview preparation, LinkedIn assistance, cover letter generation, and aptitude practice into a single platform.
-
----
+LinkConnect AI is an AI-powered career development platform designed to help students, freshers, and professionals streamline their job preparation journey. It offers intelligent resume building and analysis, AI-powered interview preparation, LinkedIn assistance, cover letter generation, and aptitude practice in one integrated application. Built with modern web technologies and AI, it provides personalized career guidance, secure authentication, and a responsive user experience. LinkConnect AI empowers users to enhance their professional profiles, improve job readiness, and confidently pursue career opportunities.
 
 ## ✨ Features
+
+### 🤝 LinkedIn Networking
+
+- LinkedIn Connection Request Templates
+- AI-generated personalized connection requests
+- Professional networking message suggestions
+- Customizable templates for recruiters, hiring managers, alumni, and professionals
 
 ### 🤖 AI Career Assistant
 - AI-powered career guidance
@@ -30,41 +33,32 @@ LinkConnect AI is an intelligent career assistant designed to simplify the job p
 - Improvement suggestions
 - Skill gap identification
 
+### 💼 Placement Support
+- 📝 MCQ Assessment (Technical)
+- 🤖 AI Group Discussion Practice
+- 🎤 AI HR Interview Preparation
+
+### 🎤 Mock Interview
+
+- Technical Mock Interviews
+- HR Mock Interviews
+- Role-Based Interview Practice
+- AI-Powered Interview Feedback
+- Realistic Interview Questions
+- Performance Evaluation
+
 ### ✉️ Cover Letter Generator
 - Generate personalized cover letters
 - Multiple writing styles
 - Job-specific customization
 
-### 💼 LinkedIn Assistant
-- LinkedIn message generator
-- LinkedIn post generator
-- Networking assistance
-- Profile optimization suggestions
-
-### 🎤 Interview Preparation
-- Technical Interview Practice
-- HR Interview Questions
-- Mock Interview Sessions
-- AI Feedback
-
-### 📚 Aptitude & MCQ Practice
-- Java
-- Python
-- JavaScript
-- TypeScript
-- C Programming
-- SQL
-- DBMS
-- Operating Systems
-- Computer Networks
-- Software Testing
-- Data Analytics
-- Marketing
-- Sales
-- Telecaller
-- Aptitude
-- Current Affairs
-- General Knowledge
+### 📄 README Generator
+- Generate professional and GitHub-ready README files effortlessly with AI assistance.
+- Create well-structured documentation for both personal profiles and projects.
+- Customize sections including features, technology stack, installation, usage, and project details.
+- Build impressive developer profiles with skills, experience, education, certifications, and social links.
+- Export clean, ATS-friendly, and Markdown-formatted README files ready for GitHub repositories.
+- Save time by creating consistent, professional documentation in just a few clicks.
 
 ### 👤 Professional Profile
 - Personal Information
@@ -77,63 +71,46 @@ LinkConnect AI is an intelligent career assistant designed to simplify the job p
 - Participation
 - Hobbies & Interests
 
-### ⚙️ Profile Settings
-- Theme Management
+### ⚙️ Settings
 - Language Preferences
 - Security Settings
 - Change Password
-- Linked Accounts
 - Help Center
-
-### ❓ Help Center
-- FAQs
-- User Guide
-- Contact Support
-- Report a Bug
-- Feature Requests
-- Privacy Policy
-- Terms & Conditions
-- About LinkConnect AI
-
-### 📬 Contact Us
-- Contact form
-- Email support
-- Powered by Resend Email API
-
----
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- shadcn/ui
-- Framer Motion
-- Zustand
 
-### Backend
-- Node.js
-- Express.js
-- TypeScript
+###  Frontend
 
-### Database & Authentication
-- Supabase
-- LinkedIn OAuth
-- Google Authentication
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-764ABC?style=for-the-badge&logo=react&logoColor=white)
 
-### AI
-- OpenRouter API
+###  Backend
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+###  Database & Authentication
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![LinkedIn OAuth](https://img.shields.io/badge/LinkedIn_OAuth-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
+![Gmail Authentication](https://img.shields.io/badge/Gmail_Authentication-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
+
+###  AI
+
+![OpenRouter API](https://img.shields.io/badge/OpenRouter_API-7C3AED?style=for-the-badge&logo=openai&logoColor=white)
 
 ### Email Service
-- Resend API
 
-### Deployment
-- Vercel (Frontend)
-- Render (Backend)
+![Resend API](https://img.shields.io/badge/Resend_API-000000?style=for-the-badge&logo=resend&logoColor=white)
 
----
+###  Deployment
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 
 ## 📂 Project Structure
 

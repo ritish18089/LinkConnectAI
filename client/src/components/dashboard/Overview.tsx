@@ -22,45 +22,6 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 const MotionLink = motion.create(Link);
 
-// Dummy data for the mockups
-const stats = [
-  { 
-    id: 1, 
-    label: "Resume Templates Used", 
-    value: "12", 
-    growth: "+2", 
-    icon: FileText,
-    color: "from-blue-500 to-cyan-500",
-    bg: "bg-blue-500/10"
-  },
-  { 
-    id: 2, 
-    label: "Resumes Analyzed", 
-    value: "5", 
-    growth: "+1", 
-    icon: BarChart,
-    color: "from-purple-500 to-pink-500",
-    bg: "bg-purple-500/10"
-  },
-  { 
-    id: 3, 
-    label: "Mock Interviews", 
-    value: "3", 
-    growth: "+3", 
-    icon: Mic,
-    color: "from-orange-500 to-red-500",
-    bg: "bg-orange-500/10"
-  },
-  { 
-    id: 4, 
-    label: "AI Interactions", 
-    value: "48", 
-    growth: "+15", 
-    icon: Bot,
-    color: "from-emerald-500 to-teal-500",
-    bg: "bg-emerald-500/10"
-  },
-];
 
 const quickAccess = [
   {
@@ -183,44 +144,7 @@ export default function Overview() {
         </motion.div>
       </motion.div>
 
-      {/* 2. Statistics Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {stats.map((stat, idx) => {
-          const Icon = stat.icon;
-          return (
-            <motion.div
-              key={stat.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-neutral-900/40 backdrop-blur-md border border-neutral-800 rounded-2xl p-6 hover:bg-neutral-800/60 transition-colors group relative overflow-hidden"
-            >
-              <div className="flex justify-between items-start mb-4">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${stat.color} p-[1px]`}>
-                  <div className="w-full h-full bg-neutral-900 rounded-xl flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-white" />
-                  </div>
-                </div>
-                <div className="flex items-center gap-1 text-sm font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                  {stat.growth} this week
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-1 group-hover:scale-105 transform origin-left transition-transform duration-300">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-neutral-400 font-medium">
-                  {stat.label}
-                </div>
-              </div>
-              
-              {/* Subtle gradient hover effect in background */}
-              <div className={`absolute -bottom-12 -right-12 w-24 h-24 rounded-full ${stat.color} opacity-0 group-hover:opacity-10 blur-2xl transition-opacity duration-500`} />
-            </motion.div>
-          );
-        })}
-      </div>
+
 
       {/* 3. Quick Access */}
       <div className="space-y-4">

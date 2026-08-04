@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Edit2, Save, X, Plus, Trash2, Briefcase, Target, Award, Calendar, Heart } from 'lucide-react';
-import { supabase } from '../../../../db/supabase';
+import { supabase } from '../../../db/supabase';
 
 interface ProfessionalInformationProps {
   profile: any;

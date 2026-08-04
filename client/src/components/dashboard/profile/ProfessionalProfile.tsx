@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Edit2, Save, X, Plus, Trash2, Code, Languages, FolderGit2 } from 'lucide-react';
-import { supabase } from '../../../../db/supabase';
+import { supabase } from '../../../db/supabase';
 
 interface ProfessionalProfileProps {
   profile: any;
@@ -87,7 +87,7 @@ export default function ProfessionalProfile({ profile, setProfile, userId }: Pro
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
@@ -120,8 +120,8 @@ export default function ProfessionalProfile({ profile, setProfile, userId }: Pro
         {isEditingSkills ? (
           <div className="space-y-3">
             <div className="flex gap-2">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 value={newSkill}
                 onChange={(e) => setNewSkill(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleAddSkill()}
@@ -183,8 +183,8 @@ export default function ProfessionalProfile({ profile, setProfile, userId }: Pro
         {isEditingLanguages ? (
           <div className="space-y-3">
             <div className="flex gap-2">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 value={newLanguage}
                 onChange={(e) => setNewLanguage(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleAddLanguage()}
@@ -247,43 +247,43 @@ export default function ProfessionalProfile({ profile, setProfile, userId }: Pro
           <div className="space-y-4">
             {projectsForm.map((project, idx) => (
               <div key={idx} className="bg-neutral-950 border border-neutral-800 rounded-xl p-4 space-y-3 relative group">
-                <button 
+                <button
                   onClick={() => handleRemoveProject(idx)}
                   className="absolute top-3 right-3 p-1.5 text-neutral-500 hover:text-red-400 bg-neutral-900 rounded-lg transition-colors"
                 >
                   <Trash2 className="w-4 h-4" />
                 </button>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={project.name || ''}
                   onChange={(e) => handleUpdateProject(idx, 'name', e.target.value)}
                   placeholder="Project Name"
                   className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500 pr-10"
                 />
-                <textarea 
+                <textarea
                   value={project.description || ''}
                   onChange={(e) => handleUpdateProject(idx, 'description', e.target.value)}
                   placeholder="Short Description"
                   rows={2}
                   className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500 custom-scrollbar"
                 />
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={project.technologies || ''}
                   onChange={(e) => handleUpdateProject(idx, 'technologies', e.target.value)}
                   placeholder="Technologies Used (comma separated)"
                   className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500"
                 />
                 <div className="grid grid-cols-2 gap-3">
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={project.github_url || ''}
                     onChange={(e) => handleUpdateProject(idx, 'github_url', e.target.value)}
                     placeholder="GitHub URL"
                     className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500"
                   />
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={project.live_url || ''}
                     onChange={(e) => handleUpdateProject(idx, 'live_url', e.target.value)}
                     placeholder="Live Demo URL (optional)"
@@ -292,7 +292,7 @@ export default function ProfessionalProfile({ profile, setProfile, userId }: Pro
                 </div>
               </div>
             ))}
-            <button 
+            <button
               onClick={handleAddProject}
               className="w-full py-3 border border-dashed border-neutral-700 hover:border-indigo-500 text-neutral-400 hover:text-indigo-400 rounded-xl text-sm transition-colors flex items-center justify-center gap-2"
             >
@@ -306,7 +306,7 @@ export default function ProfessionalProfile({ profile, setProfile, userId }: Pro
                 <div key={idx} className="bg-neutral-950 border border-neutral-800 rounded-xl p-4 hover:border-neutral-700 transition-colors">
                   <h5 className="font-bold text-white text-sm mb-1">{project.name}</h5>
                   <p className="text-neutral-400 text-xs mb-3">{project.description}</p>
-                  
+
                   {project.technologies && (
                     <div className="flex flex-wrap gap-1.5 mb-3">
                       {project.technologies.split(',').map((tech: string, i: number) => (
@@ -316,7 +316,7 @@ export default function ProfessionalProfile({ profile, setProfile, userId }: Pro
                       ))}
                     </div>
                   )}
-                  
+
                   <div className="flex items-center gap-3 text-xs">
                     {project.github_url && (
                       <a href={project.github_url} target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-300 transition-colors">

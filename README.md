@@ -226,9 +226,9 @@ http://localhost:10000
 
 ## 👨‍💻 Developer
 
-**Ritish Kannur**
-Software Developer
-LinkedIn: *(Add your LinkedIn URL)*
+- **Ritish Kannur**
+- Software Developer
+- LinkedIn: https://www.linkedin.com/in/ritishkannur/
 
 ## Feedback
 I'd love your input! Please:

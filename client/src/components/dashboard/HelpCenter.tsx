@@ -18,7 +18,7 @@ export default function HelpCenter() {
 
 
   return (
-    <div className="space-y-8 pb-12 max-w-5xl mx-auto">
+    <div className="space-y-8 pb-12 px-4 sm:px-0 max-w-5xl mx-auto">
       <div className="flex items-center gap-3 mb-6">
         <h1 className="text-3xl font-bold text-white tracking-tight">{t('nav.help_center', 'Help Center')}</h1>
       </div>

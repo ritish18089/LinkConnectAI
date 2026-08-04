@@ -11,7 +11,7 @@ export default function CoverLetterHome() {
   return (
     <Routes>
       <Route path="/" element={
-        <div className="p-8 max-w-7xl mx-auto space-y-8">
+        <div className="p-4 sm:p-8 max-w-7xl mx-auto space-y-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8">
             <div>
               <h1 className="text-3xl font-bold text-white mb-2">AI Cover Letter Generator</h1>

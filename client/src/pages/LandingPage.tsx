@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router';
-import { Bot, Network, Briefcase, Handshake, Users, Sparkles, MapPin, Mail, Phone, ArrowRight, Zap, Target, Bookmark, MessageSquare, CheckCircle, LayoutGrid, FileText, Mic, BookOpen, Settings, Languages, Loader2 } from 'lucide-react';
+import { Bot, Network, Briefcase, Handshake, Users, Sparkles, MapPin, Mail, Phone, ArrowRight, Zap, Target, Bookmark, MessageSquare, CheckCircle, LayoutGrid, FileText, Mic, BookOpen, Settings, Languages, Loader2, Menu, X } from 'lucide-react';
 export default function LandingPage() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [errors, setErrors] = useState({ name: '', email: '', subject: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [toast, setToast] = useState<{ type: 'success' | 'error', message: string } | null>(null);
-
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors = { name: '', email: '', subject: '', message: '' };
@@ -79,12 +79,48 @@ export default function LandingPage() {
           <a href="#contact" className="hover:text-white transition-colors">Contact</a>
         </nav>
 
-        <div className="flex items-center gap-4 text-sm font-medium">
+        <div className="hidden md:flex items-center gap-4 text-sm font-medium">
           <Link to="/login" className="px-4 py-2 bg-white text-neutral-950 rounded-full hover:bg-neutral-200 transition-colors shadow-lg shadow-white/10">
             Login
           </Link>
         </div>
+
+        <button 
+          className="md:hidden p-2 text-neutral-400 hover:text-white"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
       </header>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 z-50 bg-neutral-950/95 backdrop-blur-xl flex flex-col pt-24 px-6 pb-6">
+          <button 
+            className="absolute top-6 right-6 p-2 text-neutral-400 hover:text-white"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <X className="w-6 h-6" />
+          </button>
+          
+          <nav className="flex flex-col gap-6 text-xl font-medium text-center">
+            <a href="#home" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-indigo-400 transition-colors">Home</a>
+            <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-indigo-400 transition-colors">About</a>
+            <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-indigo-400 transition-colors">Services</a>
+            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-indigo-400 transition-colors">Contact</a>
+          </nav>
+
+          <div className="mt-auto flex flex-col gap-4">
+            <Link 
+              to="/login" 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="w-full px-6 py-4 bg-white text-neutral-950 text-center rounded-xl font-medium hover:bg-neutral-200 transition-colors shadow-lg shadow-white/10"
+            >
+              Login
+            </Link>
+          </div>
+        </div>
+      )}
 
       <main className="relative z-10">
         <section id="home" className="max-w-7xl mx-auto px-6 pt-32 pb-24 text-center">
@@ -315,7 +351,7 @@ export default function LandingPage() {
                     {toast.message}
                   </div>
                 )}
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-neutral-400">Name</label>
                     <input

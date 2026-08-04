@@ -255,7 +255,7 @@ export default function Settings() {
     : 'Unknown';
 
   return (
-    <div className="space-y-8 pb-12 max-w-5xl mx-auto">
+    <div className="space-y-8 pb-12 px-4 sm:px-0 max-w-5xl mx-auto">
       {/* Toast Notification */}
       <AnimatePresence>
         {toastMessage && (
@@ -300,15 +300,15 @@ export default function Settings() {
               <form onSubmit={handleUpdateProfile} className="space-y-6">
                 
                 {/* Avatar Upload */}
-                <div className="flex items-center gap-6 pb-6 border-b border-neutral-800/50">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 pb-6 border-b border-neutral-800/50 text-center sm:text-left">
                   <div 
-                    className="relative group cursor-pointer"
+                    className="relative group cursor-pointer shrink-0"
                     onClick={() => !uploadingAvatar && fileInputRef.current?.click()}
                   >
                     {profileUser?.profile_image_url ? (
-                      <img src={profileUser.profile_image_url} alt="Avatar" className="w-20 h-20 rounded-2xl object-cover ring-2 ring-neutral-800 group-hover:ring-indigo-500 transition-all" />
+                      <img src={profileUser.profile_image_url} alt="Avatar" className="w-24 h-24 sm:w-20 sm:h-20 rounded-2xl object-cover ring-2 ring-neutral-800 group-hover:ring-indigo-500 transition-all" />
                     ) : (
-                      <div className="w-20 h-20 rounded-2xl bg-neutral-800 flex items-center justify-center text-3xl font-bold text-neutral-500 ring-2 ring-neutral-800 group-hover:ring-indigo-500 transition-all">
+                      <div className="w-24 h-24 sm:w-20 sm:h-20 rounded-2xl bg-neutral-800 flex items-center justify-center text-3xl font-bold text-neutral-500 ring-2 ring-neutral-800 group-hover:ring-indigo-500 transition-all">
                         {profileForm.full_name?.charAt(0) || 'U'}
                       </div>
                     )}
@@ -325,7 +325,7 @@ export default function Settings() {
                   <div className="flex-1">
                     <h3 className="text-sm font-medium text-neutral-300 mb-1">Profile Picture</h3>
                     <p className="text-xs text-neutral-500 mb-3">JPG, PNG, WEBP up to 5MB.</p>
-                    <div className="flex items-center gap-3">
+                    <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
                       <button 
                         type="button"
                         disabled={uploadingAvatar}

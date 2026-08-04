@@ -107,7 +107,7 @@ export default function PlacementSupportHome() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto pb-12 space-y-8">
+    <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8 space-y-8">
       
       {/* Header Section */}
       <div className="flex flex-col gap-2">

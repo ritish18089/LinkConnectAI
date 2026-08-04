@@ -100,7 +100,7 @@ export default function ResumeAnalyzerHome() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto pb-12">
+    <div className="max-w-4xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
         <BarChart className="w-16 h-16 text-indigo-500 mx-auto mb-4" />
         <h1 className="text-4xl font-bold text-white mb-4">Resume Analyzer</h1>
@@ -118,7 +118,7 @@ export default function ResumeAnalyzerHome() {
         </div>
       </div>
 
-      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 shadow-xl mb-8">
+      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 sm:p-8 shadow-xl mb-8">
         <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
           <Upload className="w-6 h-6 text-indigo-500" /> Upload Resume
         </h2>
@@ -150,7 +150,7 @@ export default function ResumeAnalyzerHome() {
         </div>
       </div>
 
-      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 shadow-xl mb-8">
+      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 sm:p-8 shadow-xl mb-8">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-white flex items-center gap-2">
             <FileText className="w-6 h-6 text-indigo-500" /> Paste Job Description

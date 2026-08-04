@@ -83,7 +83,7 @@ export default function ResetPasswordPage() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-950 flex flex-col justify-center py-12 sm:px-6 lg:px-8 font-sans selection:bg-indigo-500/30 relative">
+    <div className="min-h-screen bg-neutral-950 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 font-sans selection:bg-indigo-500/30 relative">
       <Link
         to="/login"
         className="absolute top-6 left-6 md:top-8 md:left-8 flex items-center gap-2 text-neutral-400 hover:text-white transition-colors group"
@@ -94,7 +94,7 @@ export default function ResetPasswordPage() {
         <span className="text-sm font-medium">Back to Login</span>
       </Link>
 
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
+      <div className="mx-auto w-full max-w-md">
         <Link to="/" className="flex justify-center items-center mb-8">
           <img src="/logo.png" alt="LinkConnect Logo" className="h-28 sm:h-32 w-auto object-contain" />
         </Link>
@@ -107,7 +107,7 @@ export default function ResetPasswordPage() {
         </p>
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-[400px]">
+      <div className="mt-8 mx-auto w-full max-w-[400px]">
         <div className="bg-neutral-900/50 backdrop-blur-sm py-8 px-4 border border-neutral-800 shadow-2xl shadow-indigo-500/5 sm:rounded-2xl sm:px-10">
           <form className="space-y-5" onSubmit={handleSubmit}>
             {message && (

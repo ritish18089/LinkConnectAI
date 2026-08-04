@@ -72,7 +72,7 @@ export default function MockInterviewHome() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto pb-12">
+    <div className="max-w-4xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
         <Mic className="w-16 h-16 text-indigo-500 mx-auto mb-4" />
         <h1 className="text-4xl font-bold text-white mb-4">Mock Interview</h1>
@@ -90,7 +90,7 @@ export default function MockInterviewHome() {
         </div>
       </div>
 
-      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 shadow-xl">
+      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 sm:p-8 shadow-xl">
         <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
           <UserCircle className="w-6 h-6 text-indigo-500" /> Candidate Information
         </h2>

@@ -312,7 +312,7 @@ export default function ProfileHome() {
   const xpProgress = ((profile.xp || 0) % 1000) / 10; // Assuming 1000 XP per level
 
   return (
-    <div className="p-8 max-w-7xl mx-auto space-y-8 pb-20">
+    <div className="p-4 sm:p-8 max-w-7xl mx-auto space-y-8 pb-20 overflow-x-hidden">
       
       {/* PROFILE HEADER */}
       <motion.div 

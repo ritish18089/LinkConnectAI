@@ -46,7 +46,19 @@ import CoverLetterHome from "../components/dashboard/cover-letter/CoverLetterHom
 import HelpCenter from "../components/dashboard/HelpCenter";
 
 export default function DashboardPage() {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth >= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setSidebarOpen(true);
+      } else {
+        setSidebarOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -169,11 +181,23 @@ export default function DashboardPage() {
   return (
     <div className="flex h-screen bg-neutral-950 text-white overflow-hidden">
 
+      {/* Mobile Sidebar Backdrop */}
+      {sidebarOpen && (
+        <div 
+          className="md:hidden fixed inset-0 z-40 bg-black/60 backdrop-blur-sm"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+
       {/* Sidebar */}
       <motion.aside
-        animate={{ width: sidebarOpen ? 260 : 80 }}
+        initial={false}
+        animate={{ 
+          width: sidebarOpen ? 260 : 80,
+          x: 0
+        }}
         transition={{ duration: 0.25 }}
-        className="hidden md:flex flex-col border-r border-neutral-800 bg-neutral-900/40 backdrop-blur-xl"
+        className={`fixed md:relative z-50 h-full flex-col border-r border-neutral-800 bg-neutral-900/95 md:bg-neutral-900/40 backdrop-blur-xl transition-transform duration-300 ${sidebarOpen ? 'translate-x-0 flex' : '-translate-x-full md:translate-x-0 md:flex hidden'}`}
       >
         <div className="h-24 flex items-center px-5 border-b border-neutral-800 shrink-0">
           <Link
@@ -215,6 +239,11 @@ export default function DashboardPage() {
               <Link
                 key={item.path}
                 to={item.path}
+                onClick={() => {
+                  if (window.innerWidth < 768) {
+                    setSidebarOpen(false);
+                  }
+                }}
                 className={`flex items-center gap-3 px-3 py-3 rounded-xl transition-all ${active
                     ? "bg-indigo-500/10 text-indigo-400"
                     : "text-neutral-400 hover:bg-neutral-800 hover:text-white"
@@ -251,7 +280,7 @@ export default function DashboardPage() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
-              className="hidden md:flex p-2 rounded-lg hover:bg-neutral-800"
+              className="p-2 rounded-lg hover:bg-neutral-800"
             >
               <Menu className="w-5 h-5" />
             </button>

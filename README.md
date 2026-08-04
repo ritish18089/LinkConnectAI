@@ -273,16 +273,19 @@ This project is licensed under the MIT License.
 ## 👨‍💻 Developer
 
 **Ritish Kannur**
-
 Software Developer
-
 LinkedIn: *(Add your LinkedIn URL)*
 
-GitHub: *(Add your GitHub URL)*
+## Feedback
+I'd love your input! Please:
+- Open issues on [my GitHub repo](https://github.com/me/my-repo/issues)
 
-Portfolio: *(Add your Portfolio URL)*
+[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ritish@gmail.com)
 
----
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat_Now-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/message/PN2QM2ZVWN6GF1)
+
+I appreciate all feedback!
+
 
 ## ⭐ Support
 

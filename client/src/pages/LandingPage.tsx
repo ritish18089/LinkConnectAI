@@ -45,7 +45,6 @@ export default function LandingPage() {
         const errorText = await response.text();
         throw new Error(`Server returned ${response.status}: ${errorText || response.statusText}`);
       }
-
       if (contentType && contentType.includes('application/json')) {
         const data = await response.json();
         if (data.success) {

@@ -1,5 +1,5 @@
 import express from "express";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import { createClient } from "@supabase/supabase-js";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -21,21 +21,7 @@ dotenv.config();
 
 dns.setDefaultResultOrder("ipv4first");
 
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
-
-transporter.verify((error, success) => {
-  if (error) {
-    console.error("❌ Gmail Connection/Authentication Failed:", error);
-  } else {
-    console.log("✓ Gmail Connected Successfully");
-  }
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
@@ -953,74 +939,57 @@ Instructions:
 });
 
 app.post("/api/contact", async (req, res) => {
-  console.log("✓ Request received");
   try {
-    const { name, email, subject, message } = req.body || {};
-    console.log("✓ Request body:", { name, email, subject, message });
-    console.log("✓ EMAIL_USER loaded:", process.env.EMAIL_USER);
+    const { name, email, subject, message } = req.body;
 
     if (!name || !email || !subject || !message) {
-      return res.status(400).json({ success: false, message: "All fields are required" });
+      return res.status(400).json({
+        success: false,
+        message: "All fields are required",
+      });
     }
 
-    // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return res.status(400).json({ success: false, message: "Invalid email format" });
-    }
-
-    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
-      return res.status(500).json({ success: false, message: "Missing EMAIL_USER or EMAIL_PASS" });
-    }
-
-    // Plain text format as requested
-    const emailBody = `----------------------------------------
+    const emailBody = `
+----------------------------------------
 
 Name:
-${name.trim()}
+${name}
 
 Email:
-${email.trim()}
+${email}
 
 Subject:
-${subject.trim()}
+${subject}
 
 Message:
-${message.trim()}
+${message}
 
 Submitted At:
-${new Date().toISOString()}
+${new Date().toLocaleString()}
 
-----------------------------------------`;
+----------------------------------------
+`;
 
-    try {
-      await transporter.sendMail({
-        from: `"${name}" <${process.env.EMAIL_USER}>`,
-        to: "ritish1808@gmail.com",
-        replyTo: email,
-        subject: `New Contact Form Submission - LinkConnect AI`,
-        text: emailBody,
-      });
-      console.log("✓ sendMail result: Email Sent Successfully");
-      return res.json({ success: true, message: "Your message has been sent successfully." });
-    } catch (emailError: any) {
-      console.error("✓ Full error stack:", emailError);
-      let errorMessage = "Failed to send email.";
-      if (emailError.responseCode === 535) {
-        errorMessage = "SMTP Authentication Failed / Invalid App Password";
-        console.error("SMTP Authentication Failed", emailError);
-      } else if (emailError.code === 'ECONNREFUSED') {
-        errorMessage = "Gmail Connection Refused";
-        console.error("Email Delivery Failed", emailError);
-      } else {
-        errorMessage = emailError.message || errorMessage;
-        console.error("Email Delivery Failed", emailError);
-      }
-      return res.status(500).json({ success: false, message: errorMessage });
-    }
-  } catch (err: any) {
-    console.error("✓ Full error stack:", err);
-    res.status(500).json({ success: false, message: err.message || "Internal server error" });
+    await resend.emails.send({
+      from: "LinkConnect AI <onboarding@resend.dev>",
+      to: ["ritish1808@gmail.com"],
+      replyTo: email,
+      subject: `New Contact Form Submission - ${subject}`,
+      text: emailBody,
+    });
+
+    return res.json({
+      success: true,
+      message: "Message sent successfully.",
+    });
+
+  } catch (error: any) {
+    console.error(error);
+
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
   }
 });
 

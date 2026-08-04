@@ -949,10 +949,10 @@ Instructions:
   }
 });
 
-app.get("/api/contact", async (req, res) => {
+app.post("/api/contact", async (req, res) => {
   console.log("✓ Request received");
   try {
-    const { name, email, subject, message } = req.body;
+    const { name, email, subject, message } = req.body || {};
     console.log("✓ Request body:", { name, email, subject, message });
     console.log("✓ EMAIL_USER loaded:", process.env.EMAIL_USER);
 
@@ -999,7 +999,7 @@ ${new Date().toISOString()}
         text: emailBody,
       });
       console.log("✓ sendMail result: Email Sent Successfully");
-      res.json({ success: true, message: "Your message has been sent successfully." });
+      return res.json({ success: true, message: "Your message has been sent successfully." });
     } catch (emailError: any) {
       console.error("✓ Full error stack:", emailError);
       let errorMessage = "Failed to send email.";

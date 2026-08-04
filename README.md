@@ -146,35 +146,35 @@ RESEND_API_KEY=your_resend_api_key
 ### 📊 Dashboard Overview
 <p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Dashboard%20Overview.png" height="1000px"></p>
 
-### 🤖 AI Assistant
-<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/AI%20Assistant.png" height="1000px"></p>
-
 ### 🤝 Connection Networking
 <p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Connection%20Networking.png" height="1000px"></p>
+
+### 🤖 AI Assistant
+<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/AI%20Assistant.png" height="1000px"></p>
 
 ### 📄 Resume Builder
 <p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Resume%20Builder.png" height="1000px"></p>
 
-### 📈 Resume Analyzer
-<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Resume%20Analyzer.png" height="1000px"></p>
-
-### ✉️ Cover Letter Generator
-<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Cover%20Letter.png" height="1000px"></p>
-
-### 📘 README Generator
-<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Readme.png" height="1000px"></p>
-
-### 🎤 Mock Interview
-<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Mock%20Interview.png" height="1000px"></p>
+### 💼 Placement Support
+<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Placement%20Support.png" height="1000px"></p>
 
 ### 👥 AI Group Discussion
 <p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Group%20Discussion.png" height="1000px"></p>
 
-### 💼 Placement Support
-<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Placement%20Support.png" height="1000px"></p>
-
 ### 🗣️ AI HR Interview
 <p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/HR%20Interview.png" height="1000px"></p>
+
+### 🎤 Mock Interview
+<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Mock%20Interview.png" height="1000px"></p>
+
+### 📈 Resume Analyzer
+<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Resume%20Analyzer.png" height="1000px"></p>
+
+### 📘 README Generator
+<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Readme.png" height="1000px"></p>
+
+### ✉️ Cover Letter Generator
+<p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Cover%20Letter.png" height="1000px"></p>
 
 ### 👤 Profile
 <p align="center"><img src="https://github.com/ritish18089/LinkConnectAI/blob/main/Screenshots/Profile%20.png" height="1000px"></p>

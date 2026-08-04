@@ -283,7 +283,7 @@ http://localhost:10000
 
 ## Feedback
 I'd love your input! Please:
-- Open issues on [my GitHub repo](https://github.com/me/my-repo/issues)
+- Open issues on [my GitHub repo](https://github.com/ritish18089/LinkConnectAI/issues)
 
 [![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ritish@gmail.com)
 

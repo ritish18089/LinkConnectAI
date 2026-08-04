@@ -262,21 +262,6 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            <div className="flex items-center">
-              <input
-                id="terms"
-                type="checkbox"
-                required
-                className="h-4 w-4 rounded border-neutral-800 bg-neutral-950 text-indigo-500"
-              />
-
-              <label htmlFor="terms" className="ml-2 text-sm text-neutral-400">
-                I agree to the{' '}
-                <a href="#" className="text-indigo-400">
-                  Terms of Service
-                </a>
-              </label>
-            </div>
 
             <button
               type="submit"

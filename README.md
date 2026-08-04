@@ -92,8 +92,10 @@ LinkConnect AI is an AI-powered career development platform designed to help stu
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 
-###  Database & Authentication
+###  Database 
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
+### Authentication
 ![LinkedIn OAuth](https://img.shields.io/badge/LinkedIn_OAuth-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
 ![Gmail Authentication](https://img.shields.io/badge/Gmail_Authentication-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
 
